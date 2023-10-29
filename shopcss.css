@@ -1,0 +1,232 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    
+}  
+
+
+        /* Add your custom CSS styles for the attractive section here */
+.attractive-section {
+            
+            background-image: url(anime3.jpg);
+            background-size:cover;
+            color: black;
+            font-family:cursive;
+            font-size: large;
+            text-align: center;
+            width: 40%;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin: 40px auto;
+            cursor: pointer;
+            justify-content: center;
+}
+
+        /* Style the button within the attractive section */
+.attractive-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+
+
+.nav {
+        overflow: hidden;
+        background-color: #333;
+        height: 48px;
+        
+    }
+.nav a{
+float:right;
+color: #f2f2f2;
+text-align: center;
+padding:14px 16px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+.logo {
+    float: left; /* To make the logo appear on the left side */
+    margin: 10px; /* Add margin to control its position and spacing */
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+}
+
+.navleft a:hover {
+    background-color:teal;
+    color: #fff;
+  }
+
+      
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #fff;
+    padding: 3px 0;
+}
+
+header .navright a img{
+    width: 60px;
+    margin-left: 8px;
+  }
+
+header .navleft{
+    display: flex;
+    
+  }
+
+  header .navleft .links a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+
+h1 {
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgb(239, 240, 236); /* Add text shadow */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.art-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.art-piece {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 280px;
+    display: inline-block;
+}
+
+.art-piece:hover{
+    opacity:1;
+
+}
+.art-piece img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+
+.siteFooter {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+
+.mid{
+    padding: 10px;
+    flex:1;
+    text-align: left;
+    margin-left: 30px;
+    
+
+}
+
+.footer-nav {
+    padding: 10px;
+    flex: 1;
+    text-align: right;
+}
+
+.extra-info {
+    
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.extra-info a {
+    color: #fff;
+}
+
+.footer-nav ul {
+    list-style: none;
+    
+}
+
+.footer-nav li {
+    
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover{
+
+    
+    background-color: #faea05;
+    color: #fff;
+
+
+}
+
+
+
+
+/* Responsive design - adjust as needed */
+@media (max-width: 768px) {
+    .art-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-piece {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

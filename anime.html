@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Pieces for Sale</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".art-piece").hover(
+                function() {
+                    $(this).css("transform", "scale(1.1)");
+                },
+                function() {
+                    $(this).css("transform", "scale(1)");
+                }
+            );
+        });
+
+        $(document).ready(function() {
+    // Initially hide the art pieces
+    $(".art-piece").css({
+        opacity: 0,
+        transform: 'scale(1)',
+    });
+
+    // Apply a fade-in and scale-up animation
+    $(".art-piece").animate(
+        {
+            opacity: 1,
+            transform: 'scale(1)',
+        },
+        {
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'swing', // Easing function for the animation
+        }
+    );
+});
+        </script>
+        
+    
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            background-repeat: repeat;
+            background-image: url("bc.jpg");
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+           max-width: 1240;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .art-piece {
+            
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            width: 280px;
+            display: inline-block;
+            margin: 10px; 
+            
+        }
+
+        .art-piece img {
+            
+            max-width: 100%;
+            height: auto;
+        }
+
+        .art-title {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .art-description {
+            margin: 10px 0;
+        }
+
+        .art-price {
+            font-size: 18px;
+            color: #ff5722;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Art Pieces for Sale</h1>
+    </header>
+    
+        
+
+    <div class="container">
+        <div class="art-piece">
+            <img src="inoske.png" alt="Art Piece 1">
+            <h2 class="art-title">Inosuke Hashibira</h2>
+            <p class="art-description">Inosuke Hashibira, one of the main characters of Demon Slayer:Kimetsu no Yaiba. Always likes to think he is the strongest fighter in a situation, Wants others to respect and praise him for his skill.</p>
+            <p class="art-price">$500</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="luffy.png" alt="Art Piece 2">
+            <h2 class="art-title">Monkey D Luffy</h2>
+            <p class="art-description">Monkey D. Luffy, also known as "Straw Hat" is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates. he embarks on a grand journey filled with epic battles and extraordinary encounters.</p>
+            <p class="art-price">$700</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="RengokuVSAkaza.jpeg" alt="Art Piece 2">
+            <h2 class="art-title">Rengoku VS Akaza</h2>
+            <p class="art-description">Rengoku, a powerful Hashira of the Demon Slayer Corps, confronts Akaza, a formidable Upper Rank Demon, in a fierce and intense fight. Rengoku displays incredible strength and determination in an epic clash. </p>
+            <p class="art-price">$700</p>
+        </div>
+        <br> <br>
+
+        <div class="art-piece">
+            <img src="kakashi.png" alt="Art Piece 2">
+            <h2 class="art-title">Kakashi Hatake</h2>
+            <p class="art-description">Kakashi Hatake, a shinobi of Konohagakure's Hatake clan. He is one of Konoha's most talented ninja, regularly looked to for advice and leadership.Kakashi becomes Konoha's Sixth Hokage</p>
+            <p class="art-price">$700</p>
+        </div>
+        
+
+        <div class="art-piece">
+            <img src="zenitsu.png" alt="Art Piece 2">
+            <h2 class="art-title">Zenitsu Agatsuma</h2>
+            <p class="art-description">Zenitsu is an anxious young man. 
+                When he is extremely terrified, he blacks out and enters a trance. 
+                Zenitsu has a unique talent for swordsmanship and lightning-based techniques.
+                <p class="art-price">$700</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="levi.png" alt="Art Piece 2">
+            <h2 class="art-title">Levi Ackerman</h2>
+            <p class="art-description">
+                Levi Ackerman, a soldier in the Survey Corps Special Operations Squad, also known as Squad Levi, is the squad captain and is often referred to as Captain Levi. He is known as humanity's strongest soldier
+            </p>
+            <p class="art-price">$700</p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2023 Art Gallery. All rights reserved.
+    </footer>
+
+    
+</body>
+</html>
