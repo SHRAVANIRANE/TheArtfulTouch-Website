@@ -1,0 +1,49 @@
+.art-piece{
+    padding:9px;
+    /* width: 370px;*/
+} 
+
+@media screen and (max-width:1006px){
+    .art-piece{
+        padding: 8px;
+    }
+}
+@media screen and (max-width:1006px){
+    .art-piece{
+        padding: 8px;
+    }
+}
+@media screen and (max-width:1001px){
+    .art-piece{
+        padding: 7px;
+    }
+}
+@media screen and (max-width:966px){
+    .art-piece {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        width: 370px;
+        display: inline-block;
+        margin: 34px;
+    }
+}
+@media screen and (max-width:360px){
+    header{
+        padding: 7px 3px;
+    width: 120%;
+    }
+    .siteFooter{
+        width:120%;
+    }
+    .mid img{
+        width: 80px;
+    }
+    .extra-info {
+        padding-left: 37px;
+    }
+}
