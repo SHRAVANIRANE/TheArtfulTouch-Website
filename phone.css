@@ -1,0 +1,203 @@
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 1 rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+
+
+}
+
+#home {
+    height: 477px;
+    padding: 134px 1px;
+    width: 100%;
+
+
+}
+
+#home::before {
+    height: 745px;
+    width: 100%;
+}
+
+
+
+.btn {
+    font-size: 18px;
+    padding: 3px 16px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+#home p {
+    font-size: 1.25rem;
+}
+
+
+#secondsection {
+    flex-direction: column;
+    width: 107%;
+    padding: 18px 12px;
+}
+
+.clients {
+
+    display: flex;
+    align-items: center;
+
+    /* flex-wrap: wrap; */
+
+
+}
+
+
+.clients img {
+    width: 66px;
+    padding: 11px;
+}
+
+#client-section {
+    width: 100%
+}
+
+#client-section::before {
+    width: 100%;
+    height: 100%;
+}
+
+.last-section {
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+
+.last-section .logo {
+    width: 70px;
+    margin-left: 20px;
+}
+
+.info ul {
+
+    padding: 0px 16px;
+}
+
+.aboutme {
+    padding: 17px;
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width:430px) {
+    #navbar::before {
+        width: 117%;
+    }
+
+    #home::before {
+        height: 750px;
+        width: 100%;
+    }
+
+    #home {
+        height: 490px;
+        padding: 130px 1px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #home p {
+        font-size: 1.12rem;
+    }
+
+    .secondsection {
+        padding: 10px 13px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    p {
+
+        padding: 6px;
+    }
+
+    #client-section::before {
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar ul li {
+        padding: 5px 0px;
+    }
+
+    .last-section {
+        width: 100%;
+    }
+
+    .last-section .logo {
+        width: 70px;
+        margin-left: 19px;
+        margin-top: 10px;
+    }
+
+    .info ul {
+        padding: 0px 21px;
+    }
+
+    .Account ul {
+        padding: 0px 0px;
+    }
+
+    .Account {
+        padding: 10px;
+    }
+
+    .aboutme {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media screen and (max-width:345px) {
+    #navbar::before {
+        width: 100%;
+    }
+
+    #home::before {
+        height: 750px;
+        width: 111%;
+    }
+
+    .secondsection {
+        width: 111%;
+        padding: 0px 0px;
+    }
+
+    #client-section::before {
+        width: 111%;
+        height: 100%;
+    }
+
+    .client-items {
+        padding: 10px;
+    }
+
+    .last-section {
+        width: 111%;
+    }
+
+    .box {
+        padding: 14px;
+    }
+
+}

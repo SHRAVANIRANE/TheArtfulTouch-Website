@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="Screenshot 2023-10-26 122009-fotor-bg-remover-20231113204031.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 3px 0;
+        }
+
+        header .navright a img {
+            width: 60px;
+            margin-left: 8px;
+        }
+
+        header .navleft {
+            display: flex;
+
+        }
+
+
+        header .navleft .links a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navleft a:hover {
+            background-color: rgb(184, 97, 11);
+            color: #fff;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left {
+            background-color: antiquewhite;
+        }
+
+        .right {
+            background-color: antiquewhite;
+        }
+
+        /* .main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+} */
+
+        .content-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image img {
+            max-width: 385px;
+            /* Adjust the size as needed */
+            margin: 30px;
+            /* Add margin to create space between the image and text */
+            border: 4px solid rgb(184, 97, 11);
+            border-radius: 30px;
+        }
+
+        .text {
+            margin-left: 7px;
+            /* Add margin to create space between the image and text */
+        }
+
+        .text h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .text p {
+
+            font-size: 17px;
+            font-family: 'Archivo', sans-serif;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .content-container2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .img img {
+            max-width: 395px;
+            border: 4px solid rgb(184, 97, 11);
+            border-radius: 30px;
+            margin: 30px;
+        }
+
+
+
+        @media screen and (max-width:846px) {
+            header {
+
+                width: 140%;
+                display: flex;
+                align-items: centert;
+
+
+            }
+
+
+            .content-container,
+            .content-container2 {
+                flex-direction: column-reverse;
+                margin: 20px;
+                min-height: 100vh;
+                padding: 5px
+            }
+
+            .image img {
+                max-width: 310px;
+
+            }
+
+            .main {
+                display: inline-block;
+
+            }
+
+            .content-container2 img {
+                max-width: 310px;
+
+            }
+        }
+    </style>
+
+    <header>
+        <div class="navright">
+            <a href="index.html"><img src="Screenshot 2023-10-26 122009-fotor-bg-remover-20231113204031.png"></a>
+        </div>
+        <div class="navleft">
+            <div class="links"> <a href="index.html" class="home">Home</a> </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="content-container">
+            <div class="image">
+                <img src="SSR_edited.jpg" alt="Image Description">
+            </div>
+            <div class="text">
+                <h1>About Shravani Rane - Art Entrepreneur</h1>
+                <p> I am Shravani Rane, a passionate and self-taught artist on an extraordinary journey through the
+                    realm of art. With a deep love for self-expression and an unquenchable thirst for artistic
+                    exploration, I have harnessed my raw talent and unique vision to establish a thriving art business.
+                    My deep love for the art form of anime has not only shaped my creative journey but also fuels my
+                    artistic endeavors.
+                    My artistic journey is a testament to the power of self-discovery. With no formal training, I have
+                    cultivated my skills through sheer dedication, relentless practice, and an unbreakable spirit. My
+                    work reflects a genuine passion for the craft and a commitment to continuous growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-container2">
+            <div class="text">
+                <h1>Translating Anime Magic onto Canvas</h1>
+                <p>My art is a visual celebration of my favorite anime moments. With every brushstroke and pencil mark,
+                    I put life into the iconic characters' art pieces. My creations resonate with the same emotions that
+                    fans of anime experience while watching their favorite series
+                    Dedicated to the craft, I have made it a mission to share the magic of anime with the world through
+                    my art. This business is a testament to her talent and dedication, encompassing a wide range of
+                    anime styles and themes that cater to the diverse tastes of anime enthusiasts.</p>
+            </div>
+            <div class="img">
+                <img src="naruto-icegif-12.gif">
+            </div>
+    </main>
+
+
+</body>
+
+</html>

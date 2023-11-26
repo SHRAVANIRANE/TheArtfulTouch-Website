@@ -113,12 +113,12 @@ section #text span {
 
 .sec {
     position: relative;
-    padding: 100px;
+    padding: 10px;
     background: var(--primary);
 }
 
 .sec h2 {
-    font-size: 3.5em;
+    font-size: 1.8em;
     color: #fff;
     margin-bottom: 10px;
 }

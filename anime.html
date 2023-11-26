@@ -1,59 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Pieces for Sale</title>
+    <link rel="icon" type="image/png" href="Screenshot 2023-10-26 122009.png">
+    <link rel="stylesheet" media="screen and (max-width 1013px)" href="anime.css">
+    <title>The Artful Touch</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".art-piece").hover(
-                function() {
+                function () {
                     $(this).css("transform", "scale(1.1)");
                 },
-                function() {
+                function () {
                     $(this).css("transform", "scale(1)");
                 }
             );
         });
 
-        $(document).ready(function() {
-    // Initially hide the art pieces
-    $(".art-piece").css({
-        opacity: 0,
-        transform: 'scale(1)',
-    });
+        $(document).ready(function () {
+            // Initially hide the art pieces
+            $(".art-piece").css({
+                opacity: 0,
+                transform: 'scale(1)',
+            });
 
-    // Apply a fade-in and scale-up animation
-    $(".art-piece").animate(
-        {
-            opacity: 1,
-            transform: 'scale(1)',
-        },
-        {
-            duration: 1000, // Animation duration in milliseconds
-            easing: 'swing', // Easing function for the animation
+            // Apply a fade-in and scale-up animation
+            $(".art-piece").animate(
+                {
+                    opacity: 1,
+                    transform: 'scale(1)',
+                },
+                {
+                    duration: 1000, // Animation duration in milliseconds
+                    easing: 'swing', // Easing function for the animation
+                }
+            );
+        });
+    </script>
+    <script>
+        function purchase() {
+            window.location.href = 'cart.html';
+
         }
-    );
-});
-        </script>
-        
-    
+    </script>
+
+
     <style>
         body {
-            
+
             font-family: Arial, sans-serif;
-            background-repeat: repeat;
-            background-image: url("bc.jpg");
+            background-image: url("demonslayer.jpg");
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
         }
 
-        header {
+
+        /* header {
             background-color: #333;
             color: #fff;
             text-align: center;
+            padding: 10px;
+        } */
+        /* .navleft a:hover {
+            background-color: rgb(184, 97, 11);
+            color: #fff;
+        }
+
+
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 3px 0;
+        }
+
+        header .navright a img {
+            width: 60px;
+            margin-left: 8px;
+        }
+
+        header .navleft {
+            display: flex;
+
+        }
+
+
+        header .navleft .links a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+        } */
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .navbar::before {
+            content: '';
+            background-color: #333;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navleft {
+            margin-left: auto;
+        }
+
+        .navleft ul {
+            display: flex;
+        }
+
+        .navleft ul li {
+            font-size: 1.2rem;
+            list-style: none;
+        }
+
+        .navleft ul li a {
+            display: block;
+            padding: 2px 10px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .navleft ul li a:hover {
+            color: orangered;
+        }
+
+        .navbar img {
+            width: 80px;
             padding: 10px;
         }
 
@@ -63,27 +159,28 @@
 
         .container {
             text-align: center;
-           max-width: 1240;
+            max-width: 1240;
             margin: 0 auto;
             padding: 20px;
         }
 
         .art-piece {
-            
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: white;
-            border: 1px solid #ddd;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #333;
             border-radius: 5px;
             padding: 10px;
             text-align: center;
             width: 280px;
             display: inline-block;
-            margin: 10px; 
-            
+            margin: 10px;
+
         }
 
         .art-piece img {
-            
+
             max-width: 100%;
             height: auto;
         }
@@ -103,77 +200,233 @@
             margin: 10px 0;
         }
 
-        footer {
+        .siteFooter {
+
             background-color: #333;
             color: #fff;
-            text-align: center;
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .mid {
+            padding: 7px;
+            margin-left: 2px;
+        }
+
+        .footer-nav {
+
             padding: 10px;
+            text-align: right;
+        }
+
+        .extra-info {
+
+            flex: 1;
+            padding-left: 60px;
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .extra-info a {
+            color: #fff;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+
+        }
+
+        .footer-nav li {
+
+            margin: 15px 0;
+        }
+
+        .footer-nav a {
+
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .link a:hover {
+            color: #ff5722;
         }
     </style>
 </head>
+
 <body>
-    
-    <header>
-        <h1>Art Pieces for Sale</h1>
+
+    <header class="navbar">
+        <div class="navright">
+            <a href="index.html"><img src="Screenshot 2023-10-26 122009-fotor-bg-remover-20231113204031.png"></a>
+        </div>
+        <div class="navleft">
+            <ul>
+                <li> <a href="aboutBusiness.html" class="about">About</a></li>
+                <li><a href="index.html" class="home">Home</a></li>
+            </ul>
+        </div>
     </header>
-    
-        
+
+
 
     <div class="container">
         <div class="art-piece">
-            <img src="inoske.png" alt="Art Piece 1">
+            <img src="inoske.png" alt="Art Piece 1" onclick="purchase()">
             <h2 class="art-title">Inosuke Hashibira</h2>
-            <p class="art-description">Inosuke Hashibira, one of the main characters of Demon Slayer:Kimetsu no Yaiba. Always likes to think he is the strongest fighter in a situation, Wants others to respect and praise him for his skill.</p>
-            <p class="art-price">$500</p>
+            <p class="art-description">Inosuke Hashibira, one of the main characters of Demon Slayer:Kimetsu no Yaiba.
+                Always likes to think he is the strongest fighter in any situation, Wants others to respect and praise
+                him for his skills.</p>
+            <p class="art-price">₹5000</p>
         </div>
 
         <div class="art-piece">
-            <img src="luffy.png" alt="Art Piece 2">
+            <img src="luffy.png" alt="Art Piece 2" onclick="purchase()">
             <h2 class="art-title">Monkey D Luffy</h2>
-            <p class="art-description">Monkey D. Luffy, also known as "Straw Hat" is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates. he embarks on a grand journey filled with epic battles and extraordinary encounters.</p>
-            <p class="art-price">$700</p>
+            <p class="art-description">Monkey D. Luffy, also known as "Straw Hat" is the founder and captain of the
+                increasingly infamous and powerful Straw Hat Pirates. he embarks on a grand journey filled with epic
+                battles and extraordinary encounters.</p>
+            <p class="art-price">₹2500</p>
         </div>
 
         <div class="art-piece">
-            <img src="RengokuVSAkaza.jpeg" alt="Art Piece 2">
+            <img src="RengokuVSAkaza.jpeg" alt="Art Piece 3" onclick="purchase()">
             <h2 class="art-title">Rengoku VS Akaza</h2>
-            <p class="art-description">Rengoku, a powerful Hashira of the Demon Slayer Corps, confronts Akaza, a formidable Upper Rank Demon, in a fierce and intense fight. Rengoku displays incredible strength and determination in an epic clash. </p>
-            <p class="art-price">$700</p>
+            <p class="art-description">Rengoku, a powerful Hashira of the Demon Slayer Corps, confronts Akaza, a
+                formidable Upper Rank Demon, in a fierce and intense fight. Rengoku displays incredible strength and
+                determination in an epic clash. </p>
+            <p class="art-price">₹10,000</p>
         </div>
         <br> <br>
 
         <div class="art-piece">
-            <img src="kakashi.png" alt="Art Piece 2">
+            <img src="kakashi.png" alt="Art Piece 3" onclick="purchase()">
             <h2 class="art-title">Kakashi Hatake</h2>
-            <p class="art-description">Kakashi Hatake, a shinobi of Konohagakure's Hatake clan. He is one of Konoha's most talented ninja, regularly looked to for advice and leadership.Kakashi becomes Konoha's Sixth Hokage</p>
-            <p class="art-price">$700</p>
+            <p class="art-description">Kakashi Hatake, a shinobi of Konohagakure's Hatake clan. He is one of Konoha's
+                most talented ninja, regularly looked to for advice and leadership.Kakashi becomes Konoha's Sixth Hokage
+            </p>
+            <p class="art-price">₹1500</p>
         </div>
-        
+
 
         <div class="art-piece">
-            <img src="zenitsu.png" alt="Art Piece 2">
+            <img src="zenitsu.png" alt="Art Piece 4" onclick="purchase()">
             <h2 class="art-title">Zenitsu Agatsuma</h2>
-            <p class="art-description">Zenitsu is an anxious young man. 
-                When he is extremely terrified, he blacks out and enters a trance. 
+            <p class="art-description">Zenitsu is an anxious young man.
+                When he is extremely terrified, he blacks out and enters a trance.
                 Zenitsu has a unique talent for swordsmanship and lightning-based techniques.
-                <p class="art-price">$700</p>
+            <p class="art-price">₹1000</p>
         </div>
 
         <div class="art-piece">
-            <img src="levi.png" alt="Art Piece 2">
+            <img src="levi.png" alt="Art Piece 5" onclick="purchase()">
             <h2 class="art-title">Levi Ackerman</h2>
             <p class="art-description">
-                Levi Ackerman, a soldier in the Survey Corps Special Operations Squad, also known as Squad Levi, is the squad captain and is often referred to as Captain Levi. He is known as humanity's strongest soldier
+                Levi Ackerman, a soldier in the Survey Corps Special Operations Squad, also known as Squad Levi, is the
+                squad captain and is often referred to as Captain Levi. He is known as humanity's strongest soldier
             </p>
-            <p class="art-price">$700</p>
+            <p class="art-price">₹3500</p>
         </div>
+        <br><br>
+
+        <div class="art-piece">
+            <img src="jujutsuKaisen.png" alt="Art Piece 6" onclick="purchase()">
+            <h2 class="art-title">Jujutsu Kaisen</h2>
+            <p class="art-description">
+                Yuji Itadori from series "Jujutsu Kaisen", is a high school student who becomes a host to a powerful
+                cursed object, he confronts the curses and protects humanity.
+            <p class="art-price">₹3000</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="Naruto.png" alt="Art Piece 7" onclick="purchase()">
+            <h2 class="art-title">Naruto</h2>
+            <p class="art-description">
+                Naruto Uzumaki is the main protagonist of the anime and manga series "Naruto."The series follows his
+                journey to achieve his goals and protect his friends and village
+            <p class="art-price">₹2000</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="Shisui Uchiha.png" alt="Art Piece 8" onclick="purchase()">
+            <h2 class="art-title">Shisui Uchiha</h2>
+            <p class="art-description">
+                Shisui Uchiha was a highly skilled member of the Uchiha clan, known for his mastery of the Sharingan.
+            <p class="art-price">₹900</p>
+        </div>
+
+        <br><br>
+
+        <div class="art-piece">
+            <img src="minato.png" alt="Art Piece 9" onclick="purchase()">
+            <h2 class="art-title">Naruto</h2>
+            <p class="art-description">
+                Minato Namikaze, also known as the "Fourth Hokage" in the Naruto series, was a highly skilled and
+                respected ninja leader.Known for his mastery of the Flying Thunder God Technique, he was also Naruto
+                Uzumaki's father.
+            <p class="art-price">₹2300</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="anime eyes.png" alt="Art Piece 10" onclick="purchase()">
+            <h2 class="art-title">Anime Eyes</h2>
+            <p class="art-description">
+                Anime eyes are a distinctive and exaggerated feature of characters in Japanese animation, known for
+                their large size and expressive qualities. They play a crucial role in conveying a character's emotions
+                and personality.
+            <p class="art-price">₹4500</p>
+        </div>
+
+        <div class="art-piece">
+            <img src="tanjiro vs rengoku.png" alt="Art Piece 11" onclick="purchase()">
+            <h2 class="art-title">Tanjiro and Rengoku</h2>
+            <p class="art-description">
+                Tanjiro Kamado is a determined demon slayer in "Kimetsu no Yaiba," while Kyojuro Rengoku is the Flame
+                Hashira known for his honor and fiery abilities.
+            <p class="art-price">₹4500</p>
+        </div>
+        <br><br>
+        <!-- <div class="art-piece">
+            <img src="DS team.png" alt="Art Piece 2">
+            <h2 class="art-title">Demon Slayer</h2>
+            <p class="art-description">
+                Tanjiro is the main protagonist of "Demon Slayer," a kind-hearted demon slayer seeking to avenge his family.He desires to convert his sister into a human again. He is accompained by Insokue Hashibira and Zenitsu Agatsuma </p>
+            <p class="art-price">$700</p>
+        </div> -->
+
 
     </div>
 
-    <footer>
-        &copy; 2023 Art Gallery. All rights reserved.
+    <footer class="siteFooter">
+
+        <div class="mid">
+            <img src="Screenshot 2023-10-26 122009-fotor-bg-remover-20231113204031.png" style="width: 100px;">
+        </div>
+
+        <div class="extra-info">
+            <h1>The Artful Touch</h1>
+
+            <p>I am Shravani Rane, owner of the 'The Artful Touch', I'm a self-taught artist who's deeply passionate
+                about art.My journey as an artist is a testament to my unwavering determination and boundless
+                creativity. </p>
+            <p>To learn more, you can follow my art account on instagram...<a
+                    href="https://www.instagram.com/that.introvert_artist/">Click Here!</a></p>
+        </div>
+
+        <div class="footer-nav">
+            <ul>
+                <li class="link"><a rel="nofollow" href="https://www.instagram.com/that.introvert_artist/"
+                        target="_blank">Contact</a></li>
+                <li class="link"><a rel="nofollow" href="aboutBusiness.html">About</a></li>
+                <li class="link"><a rel="nofollow" href="aboutBusiness.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
     </footer>
 
-    
+
 </body>
+
 </html>
